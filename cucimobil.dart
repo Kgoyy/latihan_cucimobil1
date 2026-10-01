@@ -10,10 +10,14 @@ void main () {
   Map posB = {'id':null};
   Map posC = {'id':null};
 
-  // addlist(){
-  //   stdout.write("Plat Kendaraan: ");
-  //   stdin.readLineSync()!;
-  // }
+  addlist(){
+    stdout.write("Plat Kendaraan: ");
+    stdin.readLineSync()!;
+  }
+
+  out(){
+    exit(0);
+  }
 
   while (jalan == true) {
     print("======================");
@@ -31,9 +35,7 @@ void main () {
     var pilihan = input1;
     switch(pilihan){
       case 1 :
-      while()
-        stdout.write("Plat Kendaraan: ");
-        stdin.readLineSync()!;
+      addlist();
         break;
       case 2 :
         print("Daftar Waiting List");
@@ -46,8 +48,10 @@ void main () {
         stdout.write("Selesaikan Pos: ");
         var inputendpos = stdin.readLineSync()!;
         break;
+      case 5 :
+        out();
       default:
-      print("Perintah Tidak Valid");       
+      print("Perintah idak Valid");       
     }
   }
 }
